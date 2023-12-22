@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="userHomeBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserHomeController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView glyphName="USER" layoutX="82.0" layoutY="74.0" size="40" />
+            <Text layoutX="35.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELAMAT DATANG">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Text>
+            <Label fx:id="namauser" layoutX="80.0" layoutY="110.0" text=".">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="riwayatbtn" layoutX="22.0" layoutY="278.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="145.0" text="Riwayat Pemesanan">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HISTORY" />
+               </graphic>
+            </Button>
+            <Button fx:id="logoutbtn" layoutX="66.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Logout" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="417.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutY="22.0" prefHeight="213.0" prefWidth="414.0" style="-fx-background-color: #FFF8DC;">
+                <columns>
+                    <TableColumn fx:id="judulColumn" prefWidth="75.0" text="Judul" />
+                    <TableColumn fx:id="genreColumn" prefWidth="75.0" text="Genre" />
+                    <TableColumn fx:id="hargaColumn" prefWidth="75.0" text="Harga" />
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+            </TableView>
+            <AnchorPane layoutY="235.0" prefHeight="165.0" prefWidth="205.0" style="-fx-background-color: #7FFFD4;">
+               <children>
+                  <FontAwesomeIconView glyphName="STOP" layoutX="14.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="35.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="57.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="77.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="121.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="143.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="162.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="180.0" layoutY="24.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="14.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="35.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="57.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="77.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="121.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="143.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="162.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="180.0" layoutY="49.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="14.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="35.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="57.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="77.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="121.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="143.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="162.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="180.0" layoutY="72.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="14.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="35.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="57.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="77.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="121.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="143.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="162.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="180.0" layoutY="94.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="14.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="35.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="57.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="77.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="121.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="143.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="162.0" layoutY="119.0" />
+                  <FontAwesomeIconView glyphName="STOP" layoutX="180.0" layoutY="119.0" />
+                  <Text layoutX="99.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" />
+                  <Text layoutX="99.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+                  <Text layoutX="99.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+                  <Text layoutX="100.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+                  <Text layoutX="100.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E" />
+                  <Text layoutX="15.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                  <Text layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+                  <Text layoutX="59.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+                  <Text layoutX="79.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+                  <Text layoutX="123.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+                  <Text layoutX="145.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+                  <Text layoutX="164.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+                  <Text layoutX="182.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="220.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Judul" />
+            <Text layoutX="206.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambahan" />
+            <Text layoutX="221.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kursi" />
+            <Text layoutX="221.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+            <TextField fx:id="tfjudul" layoutX="283.0" layoutY="240.0" prefHeight="25.0" prefWidth="118.0" />
+            <TextField fx:id="tftotal" layoutX="283.0" layoutY="335.0" prefHeight="25.0" prefWidth="118.0" />
+            <Button fx:id="belibtn" layoutX="283.0" layoutY="367.0" mnemonicParsing="false" text="Beli Tiket" />
+            <ComboBox fx:id="cbkursi" layoutX="283.0" layoutY="305.0" prefHeight="25.0" prefWidth="117.0" />
+            <Button fx:id="keluarbtn" layoutX="388.0" layoutY="-2.0" mnemonicParsing="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TIMES" />
+               </graphic>
+            </Button>
+            <ComboBox fx:id="cbtambahan" layoutX="283.0" layoutY="274.0" prefHeight="25.0" prefWidth="117.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

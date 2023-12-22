@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RiwayatUserController">
+   <children>
+      <TableView fx:id="riwayatTableView" layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="580.0">
+         <columns>
+            <TableColumn fx:id="judulColumn" prefWidth="248.0" text="Judul Film" />
+            <TableColumn fx:id="kursiColumn" prefWidth="170.0" text="Kursi" />
+            <TableColumn fx:id="hargaColumn" prefWidth="161.0" text="Harga" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
